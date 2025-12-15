@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+      var onj = {
+        name : "Rahul",
+        age : 32,
+        hometown : 'Mumbai'
+      };
+      var myJSON = JSON.stringify(onj);
+      var newObject = JSON.parse(myJSON);
+      document.getElementById("result").innerHTML = newObject.name;
+    </script>
+</body>
+</html>
