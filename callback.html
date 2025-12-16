@@ -7,12 +7,16 @@
 </head>
 <body>
     <h1>Callback Function</h1>
+    <p id="id1"></p>
     <script>
        function f1(){
-        myDisplayer("Hello");
+        f3("Hello");
        }
        function f2(){
-        myDisplayer("world");
+        f3("world");
+       }
+       function f3(some){
+        document.getElementById("id1").innerHTML = some
        }
        f1();
        f2();
